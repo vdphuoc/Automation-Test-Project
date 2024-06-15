@@ -22,10 +22,8 @@ jobs:
         pip install pytest pytest-html playwright
         playwright install
 
-    - name: Run tests
-      run: |
-        pytest tests --html=reports/login.html
-      continue-on-error: true
+    - name: Run tests and generate reports
+      run: python run_tests.py
 
     - name: Upload Test Report
       uses: actions/upload-artifact@v2
