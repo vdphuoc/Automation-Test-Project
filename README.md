@@ -2,7 +2,7 @@
 
 Usuage:
 
-Environment: Python 3.8
+Environment: Python 3.8/3.9
 
 pip install pytest pytest-html playwright
 
