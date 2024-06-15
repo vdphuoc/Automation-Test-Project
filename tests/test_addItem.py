@@ -1,4 +1,3 @@
-import pytest
 from pages.addItem import AddItemPage
 
 def test_add_item_to_cart(login):

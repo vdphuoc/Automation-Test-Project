@@ -1,5 +1,3 @@
-from playwright.sync_api import Page
-
 class SortingPage:
     def __init__(self, page):
         self.page = page

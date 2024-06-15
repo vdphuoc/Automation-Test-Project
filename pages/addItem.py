@@ -1,5 +1,3 @@
-from playwright.sync_api import Page
-
 class AddItemPage:
     def __init__(self, page):
         self.page = page
