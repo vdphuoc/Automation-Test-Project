@@ -21,8 +21,8 @@ class OrderPage:
         self.page.fill(self.postal_code_selector, postal_code)
         self.page.click(self.continue_button_selector)
 
-    def finish_order(self):
-        self.page.click(self.finish_button_selector)
+    def finish_order(self, timeout):
+        self.page.click(self.finish_button_selector, timeout=timeout)
 
     def get_error_message(self):
         return self.page.inner_text(self.error_message_selector)

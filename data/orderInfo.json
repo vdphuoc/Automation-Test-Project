@@ -1,0 +1,12 @@
+{
+    "valid": {
+        "first_name": "John",
+        "last_name": "Doe",
+        "code": "12345"
+    },
+    "invalid": {
+        "first_name": "FName",
+        "last_name": "LName",
+        "code": ""
+    }
+}
