@@ -15,7 +15,7 @@ def test_order_success(login, read_data):
     info = read_data('orderInfo.json')
     # Perform checkout
     order_page.checkout(info['valid']['first_name'], info['valid']['last_name'], info['valid']['code'])
-    order_page.finish_order()
+    order_page.finish_order(timeout=10000)
 
     # Verify order is successful
     success_message = order_page.get_success_message()
